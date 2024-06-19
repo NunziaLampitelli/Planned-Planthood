@@ -12,6 +12,11 @@
     min-width: 100vw;
     min-height: 100vh;
   }
+  figure {
+    position: absolute;
+    width: 2rem;
+    left: 70vw;
+  }
 
   .start {
     display: grid;
@@ -46,6 +51,7 @@
     min-height: 25vh;
     justify-content: center;
     align-items: center;
+    box-shadow: 2px 15px 19px -1px rgba(0,0,0,0.51);
   }
   .start_a:first-child {
     background-color: #9e6d52;
