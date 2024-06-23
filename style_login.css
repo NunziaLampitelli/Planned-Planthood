@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
 
+html {
+scroll-behavior: smooth;
+}
 body {
   box-shadow: 10px 10px 56px -11px rgba(0, 0, 0, 0.4);
   max-width: 1000px;
@@ -54,6 +57,7 @@ background-color: white;
     }
     p {
       font-size: 3rem;
+      font-weight: 500;
       margin-top: 1rem;
     }
   }
@@ -75,10 +79,13 @@ background-color: white;
 }
 
 #planta, #datum {
+  margin-top: 1rem;
+  padding: 0.5rem;
   min-width: 90%;
   min-height: 1rem;
   border: none;
   border-bottom: solid 5px rgba(3, 3, 3, 0.062);
+  border-left: solid 4px rgba(3, 3, 3, 0.062);;
 }
 #planta:focus, #datum:focus {
   border: none;
@@ -128,7 +135,7 @@ margin-inline: 1rem;
 	box-shadow: 3px 4px 8px 0px rgba(104, 104, 104, 0.49);
   min-width: 22vw;
   max-width: 22vw;
-	figure {
+  	figure {
     background-image: url('assets/gurka.jpg');
 		background-size: cover;
 		background-position: center;
@@ -168,6 +175,9 @@ margin-inline: 1rem;
 	padding-block: 0.5rem;
 	border-radius: 10px;
 	margin-left: 0;
+}
+.trashcan:hover {
+  cursor: pointer;
 }
 .planted_container {
   display: flex;
