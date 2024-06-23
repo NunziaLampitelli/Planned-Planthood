@@ -431,4 +431,26 @@ footer {
 	grid-template-rows: 1fr 1fr;
 	grid-template-columns: none;
 }
+footer {
+	display: grid;
+	grid-template-columns: none;
+	max-height: 100vh;
+}
+.footer_i {
+	grid-column: 1 / 7;
+	min-height: 50vh;
+	max-height: 50vh;
+	
+}
+.footer_i:first-child {
+	display: grid;
+	grid-template-rows: 2fr 1fr;
+	grid-row-start: 2;
+}
+.info_div:first-child {
+	font-size: 2.5rem;
+}
+.info_div:nth-child(2) {
+	font-size: large;
+}
 }
