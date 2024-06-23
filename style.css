@@ -1,275 +1,443 @@
-@media only screen and (max-width: 600px) {
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+	
+body {
+	box-shadow: 10px 10px 56px -11px rgba(0, 0, 0, 0.4);
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	margin-inline: auto;
+	background-color: #fcf6fc;
+	font-family: "Maven Pro", sans-serif;
+	font-style: normal;
+	a {
+		text-decoration: none;
+		a:hover {
+			cursor: pointer;
+		}
+	}
+}
+header {
+	grid-column: 1 / 7;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	box-shadow: 10px 10px 56px -11px rgba(0, 0, 0, 0.26);}
+
+.start_i:first-child {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("assets/foto\ logo.jpg");
+	background-position: center;
+	background-size: cover;
+	min-height: 100%;
+}
+
+.start_i:nth-child(2) {
+	display: grid;
+	grid-template-columns: none;
+	grid-template-rows: 1fr 1fr;
+}
+
+.start_a:first-child,
+.start_a:nth-child(2) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		padding: 2rem;
+	}
+}
+
+.start_a:first-child {
+	background-color: #9e6d52;
+}
+.start_a:nth-child(2) {
+	background-color: #0a846e;
+}
+.start_i:nth-child(3) {
+	background-color: white;
+	grid-column: 1 / 7;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 10vh;
+	padding-inline: 7rem;
+	font-size: large;
+	font-weight: 600;
+	a {
+		color: #0a846e;
+	}
+	a:visited {
+		color: #0a846e;
+	}
+}
+
+main {
+	grid-column: 1 / 7;
+	display: grid;
+	grid-template-rows: 1fr 3fr;
+	background-color: white;
+	margin-top: 0.2rem;}
+		
+.main_i:first-child {
+	display: flex;
+	justify-content: center;
+	font-size: 3rem;
+	color: #0a846e;
+	margin-block: 0;
+}
+
+.main_i:nth-child(2) {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	figure {
+		background-color: #0a846e;
+		border-radius: 50%;
+		min-height: 25rem;
+		min-width: 25rem;
+		display: flex;
+		justify-content: center;
+		margin-inline: auto;
+		img {
+			max-width: 50%;
+		}
+	}
+}
+.part2,
+.more_i:first-child {
+	align-self: center;
+}
+.part2_item:first-child,
+.part3:first-child {
+	font-weight: bold;
+	font-size: 2rem;
+	margin: 0.5rem;
+}
+.part2_item:nth-child(2),
+.part3:nth-child(2) {
+	font-size: 1.1rem;
+}
+.part2_item:nth-child(3) {
+	display: flex;
+	justify-content: right;
+	margin-right: 2rem;
+}
+.button,
+.part3:nth-child(3) {
+	justify-self: right;
+	background-color: #0a8463;
+	justify-items: right;
+	border-style: none;
+	color: white;
+	font-weight: bold;
+	padding-block: 1rem;
+	min-width: 9rem;
+	border-radius: 10px;
+	font-size: larger;
+	margin-block: 1rem;
+	box-shadow: 0 1px 2px 3px rgba(128, 128, 128, 0.249);
+}
+
+hr {
+	margin-block: 2rem;
+	background-color: #0a8463;
+	height: 0.2rem;
+	min-width: 40vw;
+	border-radius: 15px;
+}
+.second_section_item {
+	margin-bottom: 2rem;
+	font-size: 2rem;
+	grid-column: 1 / 7;
+	display: flex;
+	justify-content: center;
+	background-color: white;
+}
+
+.plants {
+	min-width: 100%;
+	grid-column: 1 / 7;
+	background-color: white;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+}
+
+.plants_i {
+	box-shadow: 3px 4px 8px 0px rgba(104, 104, 104, 0.49);
+	max-height: fit-content;
+	figure {
+		background-size: cover;
+		background-position: center;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		min-height: 20rem;
+		align-items: center;
+		max-width: 100%;
+		img {
+			height: 10rem;
+		}
+	}
+}
+.plants_a {
+	display: grid;
+	max-width: 100%;
+	grid-template-columns: 1fr 1fr;
+	max-height: 8rem;
+	p {
+		max-height: 1.5rem;
+		margin: 1rem;
+		align-self: center;
+	}
+}
+.vegetable {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.date,
+.trashcan {
+	font-weight: bold;
+	justify-self: end;
+}
+.trashcan {
+	background-color: rgb(185, 56, 87);
+	color: white;
+	padding-inline: 1rem;
+	padding-block: 0.5rem;
+	border-radius: 10px;
+	margin-left: 0;
+}
+.plants_i:first-child {
+	figure {
+		background-image: url("assets/gurka.jpg");
+	}
+}
+.plants_i:nth-child(2) {
+	figure {
+		background-image: url("assets/stora\ tomater.jpg");
+	}
+}
+.plants_i:nth-child(3) {
+	figure {
+		background-image: url("assets/små\ tomater.jpg");
+	}
+}
+.plants_i:nth-child(4) {
+	figure {
+		background-image: url("assets/bönor.jpg");
+	}
+}
+.plants_i:nth-child(5) {
+	figure {
+		background-image: url("assets/turnips.jpg");
+	}
+}
+.plants_i:nth-child(6) {
+	figure {
+		background-image: url("assets/pumpkin.jpg");
+	}
+}
+
+.fler {
+	grid-column: 1 / 7;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-top: 2rem;
+}
+.more {
+	margin-left: 2rem;
+	min-height: 50vh;
+	display: grid;
+	grid-column: 1 / 7;
+	grid-template-columns: 1fr 1fr;
+	figure {
+		background-color: #0a846e;
+		border-radius: 50%;
+		max-height: 25rem;
+		max-width: 25rem;
+		display: flex;
+		justify-content: center;
+		img {
+			max-width: 40%;
+		}
+	}
+}
+.part3:nth-child(3) {
+	justify-self: start;
+	padding-inline: 2rem;
+}
+
+footer {
+	min-height: 70vh;
+	display: grid;
+	grid-column: 1 / 7;
+	background-image: url(assets/växter.jpg);
+	background-position: center;
+	background-size: cover;
+	grid-template-columns: 1fr 1fr;
+	font-size: 1.5rem;
+}
+.footer_i {
+	display: grid;
+	color: white;
+	min-height: 70vh;
+	img {
+		align-self: center;
+		grid-column: 3 / 5;
+		height: 40%;
+	}
+}
+.footer_i:first-child {
+	background-color: rgba(0, 0, 0, 0.6);
+	display: grid;
+	grid-template-rows: 4fr 1fr;
+	padding-inline: 2rem;
+	img {
+		max-width: 1.5rem;
+	}
+	a {
+		color: white;
+	}
+	a:visited {
+		color: white;
+	}
+}
+.info_div:first-child {
+	padding-top: 5rem;
+	display: flex;
+	font-size: 5rem;
+	align-items: center;
+	justify-content: center;
+}
+.info_div:nth-child(2) {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer_till_top {
+	background-color: white;
+	grid-column: 1 / 7;
+	min-height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	a {
+		color: black;
+		a:visited {
+			color: black;
+		}
+	}
+}
+	.trashcan_logo {
+		display: none;
+	}
+
+
+@media screen and (min-width: 1px) and (max-width:600px) { 
+
   body {
-    background-color: #eeeeee;
     min-width: 100vw;
     min-height: 100vh;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
     gap: 1rem;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
-
   header {
     box-shadow: 0 4px 2px 3px rgba(128, 128, 128, 0.249);
     grid-column: 1 / 7;
+		grid-template-rows: 2fr 1fr;
+		grid-template-columns: 1fr;
   }
+	.start_i:nth-child(3) {
+		display: none;
+	}
 
-  .nav_menu {
-    min-width: 100vw;
-    position: absolute;
-    display: flex;
-    width: 2rem;
-    justify-content: right;  
-    margin: 0;
-    img {
-    margin-top: 1rem;
-    width: 4rem;
-    }
-  }
-
-  .start {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-column: 1 / 7;
-  }
-
-  .start_i:first-child {
-    display: flex;
-    grid-column: 1 / 7;
-    justify-content: center;
-    align-items: center;
-    min-width: 100vw;
-    min-height: 45vh;
-    background-image: url('/assets/foto\ logo.jpg');
-    background-position:center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    
-  }
-
-  .start_i:first-child > img {
-    min-width: 60vw;
-  }
-
-  .start_i {
-    display: flex;
-
-  }
-
-  .start_a {
-    display: flex;
-    min-width: 50vw;
-    min-height: 25vh;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .start_a:first-child {
-    background-color: #9e6d52;
-      img {
-        width: 30vw;
-      }
-  }
- 
-  .start_a:last-child {
-    background-color: #0a8463;
-    img {
-      width: 27vw;
-    }
-  }
- 
-  main, .more {
-    grid-column: 1 / 7;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-block: 1rem;
-  }
-
-  .main_i, .more_i:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-
-  h3 {
-    color: #0a8463;
-  }
-
-  button {
-    grid-column: 3 / 5;
-    background-color: #0a8463;
-    border-style: none;
-    color: white;
-    font-weight: bold;
-    padding-inline: 1rem;
-    padding-block: 0.5rem;
-    min-width: 9rem;
-    border-radius: 10px;
-    font-size: larger;
-    margin-inline: auto;
-    margin-block: 1rem;
-    box-shadow: 0 1px 2px 3px rgba(128, 128, 128, 0.249);
-   }
-
-  .main_i:nth-child(3), .more_i:first-child {
-    margin-top: 1rem;
-    border-radius: 50%;
-    min-width: 15rem;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    min-height: 15rem;
-    margin-inline: auto;
-    background-color: #0a8463;
-    img {
-     height: 50%;
-    }
-  }
-
-  hr {
-    background-color: #0a8463;
-    height: 0.2rem;
-    min-width: 40vw;
-    border-radius: 15px;
-    grid-column: 2 / 6;
-  }
-  .article_item {
-   grid-column: 1 / 7;
-   justify-self: center;
-   font-weight: bold;
-   font-size: large;
-   margin-bottom: 0;
-  }
-
-  .plants {
-    grid-column: 1 / 7;
-    justify-content: center;
-    max-width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-inline: 0.5rem;
-  }
-  .plants_i {
-    box-shadow: 3px 4px 8px 0px rgba(104,104,104,0.49);
-    display: flex;
-    justify-items: center;
-    background-color: white;
-     figure {
-     margin: 0;
-     display: flex;
-     min-width: 45vw;
-     min-height: 25vh;
-     background-image: url('assets/gurka.jpg');
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center;
-     justify-content: center;
-     img {
-      max-width: 30%;
-      max-height: 30%;
-     }
-    } 
-    section {
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     width: fit-content;
-     align-items: center;
-    }
-     section > * {
-      margin: 0.5rem
-     }
-     .trashcan_logo {
-      max-width: 20%;
-      justify-self: right;
-     }
-     .date {
-      text-align: right;
-     }      
-     }
-     .vegetable, .date {
-      font-weight: bold;
-     }
-  .plants_i:nth-child(2) {
-   figure {
-    background-image: url('assets/stora\ tomater.jpg')
-  }
-  }
-
-  .plants_i:nth-child(3) {
-    figure {
-      background-image: url('assets/små\ tomater.jpg')
-    }
-  }
-  .plants_i:nth-child(4) {
-    figure {
-    background-image: url('assets/bönor.jpg')
-  }
-  }
-  .plants_i:nth-child(5) {
-    figure {
-      background-image: url('assets/turnips.jpg');
-    }
-  }
-  .plants_i:nth-child(6) {
-    figure {
-      background-image: url('assets/pumpkin.jpg')
-    }
-  }
-  footer {
-    padding-top: 2rem;
-    grid-column: 1 / 7;
-    background-image: url(assets/växter.jpg);
-    background-position: center;
-    background-size: cover;
-    grid-template-rows: 4fr 4fr 1fr 1fr;
-  }
-  .footer_i { 
-    display: flex;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    a {color: white;
-      text-decoration: none;
-      a:visited {
-        color: white;
-      }  
-  }
+	.start_i:nth-child(2) {
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: none;
+	} 
+	.start_a:first-child, .start_a:nth-child(2) {
+		img {
+			padding: 0;
+			max-height: 60%;
+		}
+	}
+	main {
+	display: flex;
+	flex-direction: column;
 }
-  .footer_i:first-child {
-    min-height: 40vh;
-  }
-  .footer_i:nth-child(2) {
-    min-height: 40vh;
-    background-color: rgba(0, 0, 0, 0.49);
-         p {
-      font-size: 3rem;
-    }
-    }
-    .footer_i:nth-child(3) {
-      background-color: rgba(0, 0, 0, 0.49);
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      justify-content: space-between;
-      font-size: large;
-      padding-inline: 2rem;
-      img {
-      width: 1.5rem;
-    }
-    }
-    .info:first-child, .info_a:nth-child(2) {
-      justify-self: end;
-    }
-
-  .footer_i:nth-child(4) {
-    min-height: 10vh;
-    background-color: white;
-    a {color: black;
-  }
-  }
+.main_i:first-child {
+	font-size: 2rem;
 }
-  
+main {
+	display: flex;
+	flex-direction: column;
+}
+.main_i:first-child {
+	font-size: 2rem;
+}
+.main_i:first-child {
+	min-height: 3rem;
+}
+.main_i:nth-child(2) {
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: none;
+	min-width: 100%;
+	text-align: center;
+		figure {
+		min-height: 20rem;
+		min-width: 20rem;
+	}
+	}
+	.part2 {
+		display:flow-root;
+		grid-row-start: 1;
+		justify-content: center;
+	}
+	.part2_item:nth-child(3) {
+		justify-content: center;
+		margin: 0;
+	}
+	.second_section_item {
+		font-size: 1rem;
+	}
+	.plants {
+		grid-template-columns: repeat(2, 1fr);
+		max-width: 100%;
+		gap:unset;
+	}
+	.plants_i {
+		max-width: 45vw;
+		
+		max-height: fit-content;
+	  figure {
+		min-height: 15rem;
+		align-items: center;
+		img {
+			height: 10rem;
+		}
+	}
+	}
+	.plants_a {
+	display: flex;
+	max-width: 100%;
+	max-height: 8rem;
+	margin-bottom: 0.5rem;
+	p {
+		font-size: medium;
+		margin: 1rem;
+		align-self: center;
+	}
+}
+.trashcan {
+	display: none;
+}
+.trashcan_logo {
+	display: flex;
+	max-height: 1.5rem;
+	margin-left: 0;
+}
+}
