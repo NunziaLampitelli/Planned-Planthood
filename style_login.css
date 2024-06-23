@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
 
 html {
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
+
 body {
   box-shadow: 10px 10px 56px -11px rgba(0, 0, 0, 0.4);
   max-width: 1000px;
@@ -19,13 +20,15 @@ body {
 		}
 	}
 }
+
 header {
   grid-column: 1 / 7;
   display: grid;
   grid-template-rows: 1fr 4fr;
 }
+
 nav {
-background-color: white;
+  background-color: white;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -40,6 +43,7 @@ background-color: white;
 		color: #0a846e;
 	}
 }
+
 .mina_sidor {
   padding-top: 4rem;
   max-height: 40vh;
@@ -68,9 +72,11 @@ background-color: white;
   margin-inline: 1rem;
   background-color: white;
 }
+
 .form_section_i:first-child {
   font-size: 2.5rem;
 }
+
 .form_section_i:nth-child(2) {
   min-width: 100%;
   display: grid;
@@ -87,6 +93,7 @@ background-color: white;
   border-bottom: solid 5px rgba(3, 3, 3, 0.062);
   border-left: solid 4px rgba(3, 3, 3, 0.062);;
 }
+
 #planta:focus, #datum:focus {
   border: none;
   background-color: #0a846e6a;
@@ -109,6 +116,7 @@ background-color: white;
   margin-block: 2rem;
 	box-shadow: 0 1px 2px 3px rgba(128, 128, 128, 0.249);
 }
+
 .button:hover {
   cursor: pointer;
 }
@@ -122,6 +130,7 @@ background-color: white;
 	background-color: white;
   min-width: 100%;
 }
+
 .planerade_i, .planterade_i {
   padding-block: 2rem;
   min-width: 100%;
@@ -130,8 +139,9 @@ background-color: white;
   justify-content: center;
   font-size: 2rem;
 }
+
 .plant {
-margin-inline: 1rem;
+  margin-inline: 1rem;
 	box-shadow: 3px 4px 8px 0px rgba(104, 104, 104, 0.49);
   min-width: 22vw;
   max-width: 22vw;
@@ -150,6 +160,7 @@ margin-inline: 1rem;
 		}
 	}
 }
+
 .plants_a {
 	display: grid;
 	max-width: 100%;
@@ -159,15 +170,17 @@ margin-inline: 1rem;
 		align-self: center;
 	}
 }
+
 .vegetable {
 	font-size: 1.5rem;
 	font-weight: bold;
 }
-.date,
-.trashcan {
+
+.date, .trashcan {
 	font-weight: bold;
 	justify-self: end;
 }
+
 .trashcan {
 	background-color: rgb(185, 56, 87);
 	color: white;
@@ -176,9 +189,11 @@ margin-inline: 1rem;
 	border-radius: 10px;
 	margin-left: 0;
 }
+
 .trashcan:hover {
   cursor: pointer;
 }
+
 .planted_container {
   display: flex;
   min-width: 100%;
@@ -192,6 +207,7 @@ footer {
   min-width: 100%;
   min-height: 30vh;
 }
+
 .footer_i {
   padding-inline: 2rem;
   background-color: #9E6D52;
@@ -200,6 +216,7 @@ footer {
   justify-content: space-between;
   gap: 1rem;
   }
+  
 .footer_a {
   height: 40vh;
   width: 20vw;
