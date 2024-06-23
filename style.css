@@ -328,6 +328,9 @@ footer {
 		}
 	}
 }
+	.nav_menu {
+		display: none;
+	}
 	.trashcan_logo {
 		display: none;
 	}
@@ -348,6 +351,19 @@ footer {
 		grid-template-rows: 2fr 1fr;
 		grid-template-columns: 1fr;
   }
+	.start_i:first-child {
+		flex-direction: column;
+		display: flex;
+		align-items: center;
+	}	
+.nav_menu {
+	display: flex;
+	min-width: 100%;
+	justify-content: end;
+	img {
+		max-width: 3rem;
+	}
+}
 	.start_i:nth-child(3) {
 		display: none;
 	}
