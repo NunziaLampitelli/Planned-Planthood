@@ -27,6 +27,10 @@ header {
   grid-template-rows: 1fr 4fr;
 }
 
+.nav_container {
+  grid-template-columns: 1 / 7;
+}
+
 nav {
   background-color: white;
 	display: flex;
@@ -142,7 +146,7 @@ nav {
 
 .plant {
   margin-inline: 1rem;
-	box-shadow: 3px 4px 8px 0px rgba(104, 104, 104, 0.49);
+	box-shadow: 3px 4px 9px 1px rgba(104, 104, 104, 0.589);
   min-width: 22vw;
   max-width: 22vw;
   	figure {
@@ -252,4 +256,107 @@ footer {
 			color: black;
 		}
 	}
+}
+  
+.trashcan_logo {
+		display: none;
+  }
+
+
+
+@media screen and (min-width: 1px) and (max-width:600px) { 
+    
+  body {
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    gap: unset;
+  }
+
+  header {
+    grid-template-rows: none;
+  }
+  nav {
+  display: none;
+  }
+
+  .form_section_i:first-child {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  .form_section_i:nth-child(2) {
+  grid-template-columns: none;
+  grid-template-rows: 1fr 1fr;
+  font-size: 1rem;
+}
+
+.plant {
+    min-width: 45vw;
+    figure {
+      min-height: 15rem;
+    img {
+      max-height: 8rem;
+    }
+  }
+}
+
+
+.trashcan {
+		display: none;
+	}
+
+.trashcan_logo {
+	display: flex;
+	max-height: 1.5rem;
+	margin-left: 0;
+  justify-self: end;
+  margin-right: 1rem;
+}
+
+
+.planted_container > .plant:nth-child(2) {
+    margin-left: -0.3rem;
+  }
+
+.vegetable {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.date {
+	font-weight: bold;
+  font-size: small;
+}
+  
+.planterade_i, .planerade_i {
+  font-size: 1.2rem;
+}
+
+.planted_container {
+  margin-bottom: 5rem;
+}
+
+footer {
+  grid-column: 1 / 7;
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  min-height: 30vh;
+}
+
+.footer_i {
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  background-color: #9E6D52;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.5rem;
+  }
+  
+.footer_a {
+  height: 15vh;
+  width: 45vw;
 }
