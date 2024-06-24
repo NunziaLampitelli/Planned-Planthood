@@ -262,6 +262,10 @@ footer {
 .nav_menu {
   display: none;
 }
+.dropdown {
+  display: none;
+}
+
 
 
 @media screen and (min-width: 1px) and (max-width:600px) { 
@@ -379,4 +383,53 @@ footer {
   }
  
 }
+
+}
+	.dropbtn {
+    position: absolute;
+    margin-top: -14rem;
+    margin-right: 1rem;
+		max-height: 2rem;
+  	color: white;
+  	font-size: 16px;
+  	border: none;
+    background-color: rgba(0, 0, 0, 0);
+	 	img {
+			max-width: 3rem;
+		 }
+	}
+
+	.dropdown {
+ 	 position: absolute;
+ 	 display: flex;
+	 justify-content: end;
+   min-width: 100%;
+	}
+
+	.dropdown-content {
+ 	 display: none;
+ 	 position: absolute;
+ 	 background-color:#0a8463;
+ 	 min-width: 160px;
+ 	 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ 	 z-index: 1;
+	}
+
+	.dropdown-content a {
+  	color: white;
+  	padding: 12px 16px;
+  	text-decoration: none;
+  	display: block;
+	}
+
+	.dropdown-content a:hover {
+		background-color: #ddd;
+	}
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
+	.dropdown:hover .dropbtn {
+		background-color: #0a8463;
+	}
 }
