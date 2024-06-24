@@ -119,6 +119,7 @@ header {
 
 .button:hover {
   cursor: pointer;
+	background-color: chocolate;
 }
 
 .planerade, .planterade {
