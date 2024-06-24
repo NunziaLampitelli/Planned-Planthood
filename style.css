@@ -270,11 +270,12 @@ hr {
 	grid-template-columns: 1fr 1fr;
 	figure {
 		background-color: #0a846e;
-		border-radius: 50%;
-		max-height: 25rem;
-		max-width: 25rem;
-		display: flex;
-		justify-content: center;
+    border-radius: 50%;
+    min-height: 25rem;
+    max-width: 25rem;
+    display: flex;
+    justify-content: center;
+		align-items: center;
 		img {
 			max-width: 40%;
 		}
@@ -287,6 +288,7 @@ hr {
 }
 
 footer {
+	margin-top: 5rem;
 	min-height: 70vh;
 	display: grid;
 	grid-column: 1 / 7;
