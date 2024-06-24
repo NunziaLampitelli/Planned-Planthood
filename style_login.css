@@ -24,20 +24,15 @@ body {
 header {
   grid-column: 1 / 7;
   display: grid;
-  grid-template-rows: 1fr 4fr;
 }
 
 .nav_container {
-  grid-template-columns: 1 / 7;
-}
-
-nav {
+  grid-column: 1 / 7;
   background-color: white;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	min-height: 10vh;
-	padding-inline: 7rem;
 	font-size: large;
 	font-weight: 600;
 	a {
@@ -49,6 +44,7 @@ nav {
 }
 
 .mina_sidor {
+  grid-column: 1 / 7;
   padding-top: 4rem;
   max-height: 40vh;
   display: flex;
@@ -262,6 +258,9 @@ footer {
 		display: none;
   }
 
+.nav_menu {
+  display: none;
+}
 
 
 @media screen and (min-width: 1px) and (max-width:600px) { 
@@ -277,7 +276,8 @@ footer {
   header {
     grid-template-rows: none;
   }
-  nav {
+  
+  .nav_container {
   display: none;
   }
 
@@ -359,4 +359,14 @@ footer {
 .footer_a {
   height: 15vh;
   width: 45vw;
+}
+.nav_menu {
+  display: flex;
+  grid-column: 1 / 7;
+  min-width: 100%;
+  justify-content: end;
+  img {
+    max-width: 2rem;
+  }
+}
 }
