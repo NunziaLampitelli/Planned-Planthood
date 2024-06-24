@@ -360,13 +360,21 @@ footer {
   height: 15vh;
   width: 45vw;
 }
-.nav_menu {
-  display: flex;
-  grid-column: 1 / 7;
-  min-width: 100%;
-  justify-content: end;
-  img {
-    max-width: 2rem;
+
+.mina_sidor {
+    figure {
+    img {
+    min-width: 2rem;
+    }
   }
 }
+.nav_menu {
+  display: flex;
+  justify-content: end;
+  min-width: 100%;
+  img {
+    min-width: 2rem;
+    max-width: 3rem;
+  }
+ 
 }
